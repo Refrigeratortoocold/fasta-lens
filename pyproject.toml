@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fasta-lens"
+version = "0.1.0"
+description = "Offline DNA FASTA validation and reproducible quality reports"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "Soh Jia Sheng"}]
+keywords = ["bioinformatics", "fasta", "dna", "quality-control"]
+classifiers = ["Programming Language :: Python :: 3", "Topic :: Scientific/Engineering :: Bio-Informatics"]
+
+[project.scripts]
+fasta-lens = "fasta_lens.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Refrigeratortoocold/fasta-lens"
+Issues = "https://github.com/Refrigeratortoocold/fasta-lens/issues"
+
+[tool.setuptools.packages.find]
+include = ["fasta_lens*"]

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "tool": {
+    "name": "fasta-lens",
+    "version": "0.1.0"
+  },
+  "thresholds": {
+    "min_length": 1,
+    "max_ambiguity_pct": 5.0
+  },
+  "summary": {
+    "record_count": 3,
+    "length": 30,
+    "canonical_bases": 26,
+    "ambiguous_bases": 4,
+    "n_bases": 2,
+    "gc_pct": 61.53846153846154,
+    "ambiguity_pct": 13.333333333333334,
+    "n_pct": 6.666666666666667,
+    "min_length": 8,
+    "max_length": 12,
+    "mean_length": 10.0,
+    "n50": 10,
+    "warning_record_count": 1,
+    "lowercase_bases": 8
+  },
+  "records": [
+    {
+      "id": "clean",
+      "description": "synthetic balanced DNA",
+      "length": 12,
+      "canonical_bases": 12,
+      "ambiguous_bases": 0,
+      "n_bases": 0,
+      "gc_pct": 50.0,
+      "ambiguity_pct": 0.0,
+      "n_pct": 0.0,
+      "lowercase_bases": 0,
+      "base_counts": {
+        "A": 3,
+        "C": 3,
+        "G": 3,
+        "T": 3
+      },
+      "warnings": []
+    },
+    {
+      "id": "ambiguous",
+      "description": "synthetic IUPAC example",
+      "length": 8,
+      "canonical_bases": 4,
+      "ambiguous_bases": 4,
+      "n_bases": 2,
+      "gc_pct": 50.0,
+      "ambiguity_pct": 50.0,
+      "n_pct": 25.0,
+      "lowercase_bases": 8,
+      "base_counts": {
+        "A": 1,
+        "C": 1,
+        "G": 1,
+        "N": 2,
+        "R": 1,
+        "T": 1,
+        "Y": 1
+      },
+      "warnings": [
+        "above_max_ambiguity"
+      ]
+    },
+    {
+      "id": "gc_rich",
+      "description": "synthetic GC example",
+      "length": 10,
+      "canonical_bases": 10,
+      "ambiguous_bases": 0,
+      "n_bases": 0,
+      "gc_pct": 80.0,
+      "ambiguity_pct": 0.0,
+      "n_pct": 0.0,
+      "lowercase_bases": 0,
+      "base_counts": {
+        "A": 1,
+        "C": 4,
+        "G": 4,
+        "T": 1
+      },
+      "warnings": []
+    }
+  ]
+}

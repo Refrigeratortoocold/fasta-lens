@@ -1,0 +1,6 @@
+>clean synthetic balanced DNA
+ACGTACGTACGT
+>ambiguous synthetic IUPAC example
+acgtnnry
+>gc_rich synthetic GC example
+GGGGCCCCAT
